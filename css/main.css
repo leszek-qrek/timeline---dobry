@@ -1,0 +1,200 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+width: 100%;
+height: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+background-color: #ffffff;
+font-family: 'Coda', sans-serif;
+font-size: .9em;
+}
+
+.mobile-list{
+display: none;
+}
+
+#main-container {
+max-width: 1000px;
+margin: 0 auto;
+width: 80%;
+max-width: 800px;
+margin-top: 150px;
+
+}
+
+.time-line {
+width: 100%;
+background: #122244;
+height: 20px;
+border-radius: 6px;
+padding: 5px;
+max-width: 800px;
+}
+
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.time-point {
+position: relative;
+cursor: pointer;
+font-size: 2em;
+color: #fff;
+width: 1px;
+text-align: center;
+height: 0px;
+border-radius: 100px;
+}
+
+.time-point:first-child > .fa {
+position: relative;
+top: -3px;
+}
+
+.fa {
+border: 3px solid #122244;
+border-radius: 100px;
+background-color: #122244;
+padding: 5px;
+}
+
+.progress-bar {
+border-radius: 10px;
+background: radial-gradient(#c4ecf5 50%, #56a0c6) !important; 
+}
+
+.tooltip-inner {
+max-width: 200px;
+padding: 0;
+color: #000;
+text-align: center;
+background-color: #fff;
+border-radius: 4px;
+}
+
+.tooltip-inner > p {
+font-size: 1em;
+font-weight: bold;
+}
+
+.tooltip {
+border: 1px solid #73d2ab;
+padding:0;
+display:block;
+top: 50px;
+width: auto;
+min-width: 70px;
+}
+
+.tooltip-inside {
+width:100%;
+border-top: 1px solid #73d2ab;
+font-size: 1.1em;
+padding: 2px;
+}
+
+.tooltip > .in {
+opacity: 1;
+
+}
+
+.tooltip-arrow {
+bottom: -5px !important;
+border-top-color: #73d2ab !important;
+}
+
+.past{
+background: radial-gradient(#c4ecf5 50%, #56a0c6);
+padding: 5px;
+color: #122244;
+border-radius: 100px;
+}
+
+.past:hover {
+background: #73d2ab;
+color: #fff;
+}
+
+#t1{
+top:-20px;
+}
+
+#t2,#t3,#t4,#t5{
+top:-22px;
+}
+
+@media(max-width: 500px ){
+
+.desktop-list{
+display: none;
+}
+
+.mobile-list{
+display: block;
+}
+
+#main-container {
+margin-top: 0;
+width: auto;
+}
+
+#t1,#t2,#t3,#t4,#t5{
+top: 0;
+left: 0;
+}
+
+.time-line {
+background: transparent;
+}
+
+.time-point {
+left:0 !important;
+border-radius: 0;
+margin-bottom: 5px;
+cursor: arrow;
+font-size: 2em;
+color: #000;
+background: #fff;
+position: relative;
+cursor: pointer;
+font-size: 2em;
+width: 100%;
+text-align: left;
+height: auto;
+border-radius: 100px;
+}
+
+.time-point > p{
+margin: 0;
+font-weight: bold;
+}
+
+.mobile-inside {
+
+}
+
+.progress-bar  {
+display: none;
+}
+
+.past {
+color: #122244 !important;
+}
+
+.fa {
+float: left;
+padding: 10px;
+margin-right: 40px;
+color: #fff;
+}
+
+}
+
